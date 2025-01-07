@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #8AC7EF;
+  --secondary-color: #FAF9EF;
+  --background-color: #221B23;
+  --third-color: #FAF9EF;
+  --font-family: 'Inter', sans-serif;
+}
+
+.dark {
+  --primary-color: #8AC7EF; /* Intercambia los colores */
+  --secondary-color: #1C0404;
+  --background-color: #FAF9EF;
+  --third-color: #7B3B3B;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en WebKit */
+}
+
+/*body::-webkit-scrollbar {
+  width: 0;
+}
+body:hover::-webkit-scrollbar {
+  width: 4px; 
+}
+body::-webkit-scrollbar-track {
+  background: #00000000;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}*/
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%; /* Garantiza que use todo el ancho */
+  min-height: 90vh;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.section-home {
+  min-height: 90vh; /* Asegura que Home ocupe toda la pantalla */
+}
+
+.section-about {
+  min-height: 100vh; /* Asegura que About ocupe su propia área */
+}
+
+/* overlay inicial por si necesito eliminarlo si no me gusta la nimación*/
+.no-scroll {
+  overflow: hidden;
+}
+.theme-wrapper.transitioning .appbar {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s ease-in-out;
+}
+.appbar.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.theme-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #FAF9EF;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+  animation: themeExpand 1s ease-in-out forwards;
+}
+.dark .theme-overlay{
+  background-color: #221B23;
+}
+
+@keyframes themeExpand {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 200vmax;
+    height: 200vmax;
+  }
+}

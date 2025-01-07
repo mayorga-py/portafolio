@@ -1,0 +1,218 @@
+.home {
+    line-height: 1;
+    padding: 0px;
+}
+
+.home .titulo {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 4000;
+    width: 58%; /* Asegúrate de que se ajuste al ancho disponible */
+    color: var(--primary-color);
+    font-size: 47px; /* Ajusta el tamaño para móviles */
+    text-align: start; 
+    padding-left: 0;
+    letter-spacing: 0.1em;
+    padding-left: 90px;
+
+}
+
+
+.ocp {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px; /* Ajusta el tamaño para móviles */
+    line-height: 0px;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: var(--secondary-color);
+    text-align: center; /* Centra el texto */
+    margin-left: 88px;
+    position: relative;
+}
+.ocp::before, .ocp::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    width: 160px; /* Ajusta el ancho de las líneas */
+    height: 8px; /* Grosor de la línea */
+    background-color: var(--secondary-color);
+}
+.ocp::before {
+    left: -10px; /* Ajusta la posición izquierda */
+    transform: translateY(-50%);
+}
+
+.ocp::after {
+    right: 575px; /* Ajusta la posición derecha */
+    transform: translateY(-50%);
+}
+
+.imprin img {
+    position: relative; /* Cambia de absolute a relative para manejarlo mejor en móviles */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 368px; /* Limita el ancho máximo */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 0px 0px 0px 36px;
+    margin-left: 2%;
+}
+
+.imprin2 img {
+    position: relative;
+    width: 80px; /* Ajusta el tamaño para móviles */
+    height: 80px;
+    margin: 10px auto; /* Centra y agrega margen */
+    border-radius: 50%; /* Hazla circular */
+    margin-left: 0;
+}
+
+.image-container {
+    position: absolute;
+    width: 175px; /* Igual que el ancho de .imprin2 img */
+    height: 175px;
+    left: 1070px; 
+    top: 0%; 
+    margin: 0 auto;
+    z-index: 1;
+    transition: filter 0.1s ease;
+}
+.image-container:hover .image-rot {
+    filter: brightness(0.5); /* Aplica un efecto de sombreado */
+}
+.image-container::after {
+    content: "\2193"; /* Flecha hacia abajo (icono de descarga) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: #FAF9EF;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+    z-index: 3;
+    pointer-events: none;
+}
+
+.image-container:hover::after {
+    opacity: 1; /* Haz visible el icono de descarga al pasar el cursor */
+}
+.image-rot {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.circle-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: rotate(-90deg);
+    animation: rotateText 16s linear infinite;
+}
+
+.circle-text text {
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    fill: #999999; /* Usa tu color secundario */
+}
+
+.circle-text textPath {
+    dominant-baseline: middle;
+    text-anchor: middle;
+    letter-spacing: 2px;
+}
+
+
+@media (min-width: 768px) {
+    .titulo {
+        font-size: 45px;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .ocp {
+        font-size: 38px;
+        text-align: left;
+        padding-left: 160px;
+    }
+
+
+    .imprin img {
+        position: absolute;
+        width: 380px;
+        left: 1150px;
+        top: -22%;
+    }
+
+    .imprin2 img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        left: 20%;
+        top: 12%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .ocp::before,
+    .ocp::after {
+        width: 80px; /* Reduce el tamaño para pantallas pequeñas */
+    }
+
+    .ocp::before {
+        left: -90px;
+    }
+
+    .ocp::after {
+        right: -90px;
+    }
+
+    .imprin {
+        margin-top: 20px;
+    }
+    
+    .imprin img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px;
+        margin-left: 5%;
+    }
+    
+    .imprin2 img {
+        width: 130px;
+        height: 130px;
+        margin-top: -90px;
+        margin-left: 64%;
+    }
+    .image-container {
+        width: 130px; /* Ajusta el tamaño al de .imprin2 img */
+        height: 130px;
+        left: 64%;
+        top: -90px;
+    }
+}
+

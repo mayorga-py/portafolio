@@ -1,0 +1,105 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño final ajustado */
+    height: 80px;
+    overflow: hidden;
+}
+
+.logo-container svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.shape {
+    fill: none;
+    stroke: #A86272;
+    stroke-width: 1.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Posiciones iniciales (separados) */
+.shape-1 {
+    transform: translate(16px, 11px); /*10,15 Arriba-Izquierda */
+}
+
+.shape-2 {
+    transform: translate(31px, 16px); /*36, 15 Arriba-Derecha */
+}
+
+.shape-3 {
+    transform: translate(29px, 32px); /*36, 40 Abajo-Derecha */
+}
+
+.shape-4 {
+    transform: translate(19px, 24px); /*10, 40 Abajo-Izquierda */
+}
+
+/* Animación al pasar el cursor (se juntan) */
+.logo-container:hover .shape-1 {
+    transform: translate(10px, 10px); /* Arriba-Izquierda */
+}
+
+.logo-container:hover .shape-2 {
+    transform: translate(36px, 10px);/* Arriba-Derecha */
+}
+
+.logo-container:hover .shape-3 {
+    transform: translate(36px, 35px);/* Abajo-Derecha */
+}
+
+.logo-container:hover .shape-4 {
+    transform: translate(10px, 35px); /* Abajo-Izquierda */
+}
+
+
+
+
+
+
+
+.logo-container.views {
+    width: 150px; /* Cambia el tamaño */
+    height: 150px;
+}
+
+.logo-container.views .shape {
+    stroke: #8AC7EF; /* Cambia el color */
+    stroke-width: 2; /* Cambia el grosor */
+}
+
+/* inicio*/
+.logo-container.views .shape-1 {
+    transform: translate(13px, 12px); 
+}
+
+.logo-container.views .shape-2 {
+    transform: translate(45px, 46px) rotate(180deg);
+}
+
+.logo-container.views .shape-3 {
+    transform: translate(45px, 40px) rotate(180deg);
+}
+
+.logo-container.views .shape-4 {
+    transform: translate(13px, 31px);
+}
+
+/* estilo 2 */
+.logo-container.views:hover .shape-1 {
+    transform: translate(16px, 11px); 
+}
+
+.logo-container.views:hover .shape-2 {
+    transform: translate(31px, 16px);
+}
+
+.logo-container.views:hover .shape-3 {
+    transform: translate(29px, 32px);
+}
+
+.logo-container.views:hover .shape-4 {
+    transform: translate(19px, 24px);
+}

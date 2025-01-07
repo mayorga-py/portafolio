@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+.layouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    color: var(--third-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+.uno{
+    font-family: var(--font-family);
+    height: 100vh;
+    flex: 1; /* Ocupa 25% del espacio */
+    max-width: 16%; /* Limita a un 25% */
+    padding: 9% 0% 0% 2%; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    color: var(--secondary-color);
+}
+
+.dos{
+    overflow-y: scroll; 
+    flex-direction: column;
+    justify-content: start;
+    flex: 1; /* Ocupa 50% del espacio */
+    max-width: 70%; /* Limita a un 50% */
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: var(--font-family);
+}
+
+.dos::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dos::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 10px;
+}
+.dos::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 9px;
+}
+
+.covert{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+    border-radius: 0px 0px 80px 80px;
+}
+
+.title{
+    padding: 2% 0% 0% 2%;
+    font-size: 4em;
+}
+
+.tex{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.im {
+    padding: 3px; /* Añade espacio interno */
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+}
+
+.im img {
+    border-radius: 9px;
+    width: 100%; /* Ocupa el ancho del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    margin-top: 20px; /* Espacio entre imágenes */
+    object-fit: contain; /* Evita deformaciones */
+    display: block;
+}
+
+.tres{
+    height: 100vh;
+    flex: 1; 
+    max-width: 14%; /* Limita a un 25% */
+    padding: 9% 0% 0% 3%; 
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+    .layouts {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        height: auto; /* Ajustar altura al contenido */
+    }
+
+    .tres {
+        order: 1; /* Colocar arriba */
+        height: auto; /* Ajustar altura */
+        max-width: 100%;
+        padding: 5% 0; /* Reducir padding */
+        text-align: center;
+    }
+
+    .uno {
+        order: 2; /* Colocar en el medio */
+        max-width: 100%; /* Usar todo el ancho */
+        height: auto; /* Ajustar altura */
+        padding: 5% 0; /* Reducir padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .work-tools {
+        display: flex;
+        flex-wrap: nowrap; /* No permitir que los elementos bajen de línea */
+        overflow-x: auto; /* Hacer que la lista sea desplazable horizontalmente */
+        gap: 10px; /* Espacio entre los elementos */
+    }
+
+    .uno .work-tools h3 {
+        flex: 1 0 auto; /* Mantener encabezados en una línea */
+        margin: 0;
+    }
+
+    .uno .work-tools li {
+        display: inline-block; /* Mostrar los elementos en fila */
+        margin: 0 10px; /* Espaciado horizontal */
+        white-space: nowrap; /* Evitar que los textos se corten */
+    }
+
+    .dos {
+        order: 3; /* Colocar al final */
+        max-width: 100%; /* Usar todo el ancho */
+        height: auto; /* Ajustar altura */
+        padding: 5% 0; /* Reducir padding */
+    }
+}

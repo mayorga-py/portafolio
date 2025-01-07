@@ -1,0 +1,176 @@
+.project-section {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.project-images {
+    position: relative;
+    width: 690px;
+    height: 500px;
+    border-radius: 0px 90px 0px 0px;
+    background-size: cover; 
+    background-position: center;
+    align-self: flex-end;
+    transition: background-image 0.5s ease-in-out; /* Transición suave */
+    line-height: 500px;
+    letter-spacing: 0.35em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.project-images.active {
+    opacity: 1; /* Mostrar imagen con transición */
+  }
+
+.projects-list p {
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .projects-list p:hover {
+    color: #00bcd4; /* Cambia el color del texto al pasar el cursor */
+  }
+
+.project-titles{
+    position: relative;
+    width: 500px;
+    height: 580px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: flex-end;
+    padding: 0 10px 10px 10px;
+    overflow: hidden;
+}
+
+.p-line1{
+    position: relative;
+}
+
+.p-line1::after {
+    padding-left: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 16%;
+    width: 93%;
+    height: 8px; /* Altura de la línea */
+    background-color: var(--third-color); /* Color de la línea */
+}
+
+.project-titles p {
+    position: relative;
+    margin: 15px 0;
+    font-size: 30px;
+    padding-left: 10px;
+    color: var(--third-color);
+    letter-spacing: 0.1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 90px;
+}
+
+.projects-list p::after {
+    padding-left: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 93%;
+    height: 4px; /* Altura de la línea */
+    background-color: var(--third-color); /* Color de la línea */
+}
+
+.projects-list {
+    overflow-y: auto;
+    font-size: 30px;
+    padding-left: 10pxi;
+    letter-spacing: 0.1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 90px;
+}
+
+.projects-list p:hover{ 
+    padding-left: 19px;
+    letter-spacing: 0.50em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.projects-list::-webkit-scrollbar {
+    width: 0;
+}
+.projects-list:hover::-webkit-scrollbar {
+    width: 4px; 
+}
+.projects-list::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 10px;
+}
+.projects-list::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* WORK */
+.project-titles .work-tex{
+    position: relative;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: rgba(213, 213, 213, 0.717647);
+    margin: 0;
+    top: -39px;
+    left: 45%;
+}
+.dark .project-titles .work-tex{
+    color: rgba(123, 59, 59, 0.7176);
+}
+
+/* AND */
+.project-titles .and-tex{
+    position: relative;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 29px;
+    line-height: 24px;
+    letter-spacing: -0.14em;
+    color: #D5D5D5;
+    top: 1%;
+    left: 35%;
+}
+
+.dark .project-titles .and-tex{
+    color: #7B3B3B;
+}
+/* PROJETS */
+.project-titles .projects-tex{
+    position: relative;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 44px;
+    color: #d5d5d5;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+}
+
+.dark .project-titles .projects-tex{
+    color: #7B3B3B;
+}
+
+
