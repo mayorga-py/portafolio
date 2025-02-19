@@ -5,16 +5,96 @@
 
 .home .titulo {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-weight: 4000;
-    width: 58%; /* Asegúrate de que se ajuste al ancho disponible */
+    font-weight: 40;
+    width: 60%; /* Asegúrate de que se ajuste al ancho disponible */
     color: var(--primary-color);
-    font-size: 47px; /* Ajusta el tamaño para móviles */
+    font-size: 55px; /* Ajusta el tamaño para móviles */
     text-align: start; 
     padding-left: 0;
     letter-spacing: 0.1em;
     padding-left: 90px;
-
 }
+
+
+.animated-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    bottom: 20%; 
+    height: 120px; /* Ajustar según el espacio */
+}
+
+/* Cada punto de la flecha */
+.arrow-dot {
+    width: 10px; /* Tamaño del punto */
+    height: 10px;
+    background-color: var(--secondary-color); /* Color del punto */
+    border-radius: 50%; /* Forma circular */
+    margin: 5px 0; /* Espaciado vertical entre puntos */
+    opacity: 0; /* Comienza invisible */
+    animation: arrow-dots-blink 1.5s infinite;
+    position: absolute; /* Para posicionarlos correctamente */
+}
+
+.arrow-dot:nth-child(1) {
+    top: 76%;
+    left: 48%;
+    transform: translateX(-50%);
+    animation-delay: 0.7s;
+}
+
+.arrow-dot:nth-child(2) {
+    top: 76%;
+    left: 52%;
+    transform: translateX(-50%);
+    animation-delay: 0.7s;
+}
+
+.arrow-dot:nth-child(3) {
+    top: 78%;
+    left: 49%;
+    transform: translateX(-50%);
+    animation-delay: 0.6s;
+}
+
+.arrow-dot:nth-child(4) {
+    top: 78%;
+    left: 51%;
+    transform: translateX(-50%);
+    animation-delay: 0.6s;
+}
+
+.arrow-dot:nth-child(5) {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0.5s;
+}
+
+/* Animación para simular movimiento */
+@keyframes arrow-dots-blink {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px); /* Inicia fuera de la posición */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); /* Aparece en su posición original */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px); /* Desaparece y baja */
+    }
+}
+
+@media (max-width: 768px) {
+    .animated-arrow-container {
+        display: none; /* La flecha no se muestra */
+    }
+}
+
 
 
 .ocp {
@@ -54,8 +134,8 @@
     max-width: 368px; /* Limita el ancho máximo */
     height: auto;
     margin: 0 auto; /* Centra la imagen */
-    border-radius: 0px 0px 0px 36px;
-    margin-left: 2%;
+    border-radius: 0px 0px 0px 73px;
+    margin-left: 1.15%;
 }
 
 .imprin2 img {
@@ -125,7 +205,7 @@
 }
 
 .circle-text text {
-    font-size: 16px; /* Ajusta el tamaño del texto */
+    font-size: 20px; /* Ajusta el tamaño del texto */
     font-family: "Arial", sans-serif;
     font-weight: bold;
     fill: #999999; /* Usa tu color secundario */
@@ -134,7 +214,7 @@
 .circle-text textPath {
     dominant-baseline: middle;
     text-anchor: middle;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 }
 
 
@@ -178,36 +258,42 @@
         text-align: center;
     }
 
+    .ocp {
+        font-size: 130%;
+        text-align: left;
+        padding-left: 0px;
+    }
+
     .ocp::before,
     .ocp::after {
-        width: 80px; /* Reduce el tamaño para pantallas pequeñas */
-    }
-
-    .ocp::before {
-        left: -90px;
-    }
-
-    .ocp::after {
-        right: -90px;
+        display: none; /* Reduce el tamaño para pantallas pequeñas */
     }
 
     .imprin {
-        margin-top: 20px;
+        margin-top: 50px;
     }
     
     .imprin img {
         width: 100%;
         max-width: 300px;
         border-radius: 15px;
-        margin-left: 5%;
+        margin-left: 25%;
     }
     
     .imprin2 img {
         width: 130px;
         height: 130px;
-        margin-top: -90px;
-        margin-left: 64%;
+        margin-top: 948%;
+        margin-left: 50%;
     }
+
+    .circle-text {
+        width: 190px;
+        height: 190px;
+        margin-top: 925%;
+        margin-left: 25%;
+    }
+
     .image-container {
         width: 130px; /* Ajusta el tamaño al de .imprin2 img */
         height: 130px;

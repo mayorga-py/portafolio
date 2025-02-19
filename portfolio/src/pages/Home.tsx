@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import m1 from "../assets/m1.webp";
+import m1 from "../assets/m1.jpg";
 import mc from "../assets/mc.webp";
 import cvPdf from "../assets/CV_Luis_Eduardo_Mayorga_Becerra_.pdf";
 import{ useTranslation } from "react-i18next";
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                                     startOffset="50%"
                                     textAnchor="middle"
                                 >
-                                    Download CV • Full Stack Developer • Creativity & Innovation •
+                                    Download CV • Full Stack • Creativity •
                                 </textPath>
                             </text>
                         </svg>
@@ -46,8 +46,20 @@ const Home: React.FC = () => {
                     </div>
                 </CoolMode>{/*eliminar esta linea si no me gusta el efecto*/}
                 </a>
-
             </div>
+
+            <div className="animated-arrow-container">
+                <div className="arrow">
+                    <div className="arrow-dot"></div>
+                    <div className="arrow-dot"></div>
+                    <div className="arrow-dot"></div>
+                    <div className="arrow-dot"></div>
+                    <div className="arrow-dot"></div>
+                </div>
+            </div>
+
+
+
         </div>
     );
 };

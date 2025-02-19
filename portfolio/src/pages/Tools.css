@@ -1,7 +1,14 @@
-.tools_prin{
+.tools_prin {
     display: flex;
+    flex-direction: column; /* Por defecto en columna */
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center; /* Centrar el texto */
+}
 
+@media screen and (min-width: 769px) {
+    .tools_prin {
+        flex-direction: row; /* En escritorio, coloca los elementos en fila */
+    }
 }

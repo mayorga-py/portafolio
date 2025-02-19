@@ -8,10 +8,10 @@ import prevImg_6 from "../assets/projects-views/prev_6.webp";
 import Logo from "../components/Logo";
 import"./views.css"
 import { Link } from "react-router-dom";
-
+import{ useTranslation } from "react-i18next";
 
 const prevout: React.FC = () => {
-
+        const { t } = useTranslation();
     return (
         <div className="layouts">
 
@@ -34,19 +34,24 @@ const prevout: React.FC = () => {
                 <img className="covert" src={prevImg_1} alt="prev_1" />
                 <div className="title">PREV-OUT</div>
                 <div className="tex">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus ipsum, egestas porttitor neque. Nulla dictum, velit et pellentesque pulvinar, justo arcu tempor lorem, vitae euismod ex justo non metus. Nunc feugiat vestibulum arcu ac finibus. Donec vitae maximus felis. </p>
+                    <p>{t("viewprev.p1")}</p>
                 </div>
                 <div className="im">
                     <img src={prevImg_2} alt="prev_2" />
+                </div>
+                <div className="tex">
+                    <p>{t("viewprev.p2")}</p>
+                </div>
+                <div className="im">
                     <img src={prevImg_3} alt="prev_3" />
                     <img src={prevImg_4} alt="prev_4" />
                     <img src={prevImg_5} alt="prev_5" />
                     <img src={prevImg_6} alt="prev_6" />
                 </div>
                 <div className="tex">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus ipsum, egestas porttitor neque. Nulla dictum, velit et pellentesque pulvinar, justo arcu tempor lorem, vitae euismod ex justo non metus. Nunc feugiat vestibulum arcu ac finibus. Donec vitae maximus felis. </p>
+                    <p>{t("viewprev.p3")}</p>
                 </div>
-        
+
             </div>
             <div className="tres"> 
                 <Link to="/#projects">

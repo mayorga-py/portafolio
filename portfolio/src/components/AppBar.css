@@ -11,7 +11,8 @@
     box-sizing: border-box;
     z-index: 1000;
     backdrop-filter: blur(3px);
-    transition: transform 0.7s ease-in-out; /* Aplica transición suave */
+    transition: transform 0.7s ease-in-out;
+    /* Aplica transición suave */
     transform: translateY(0);
 }
 
@@ -19,6 +20,7 @@
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(0);
     }
@@ -28,6 +30,7 @@
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(-100%);
     }
@@ -84,53 +87,55 @@
         gap: 0.5rem;
     }
 }
-/* From Uiverse.io by alfoly1988 */ 
+
+/* From Uiverse.io by alfoly1988 */
 /* The switch - the box around the slider */
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 /* To hide the checkbox */
 #themeInput {
     display: none;
-  }
-  
-  .themeSwitch {
+}
+
+.themeSwitch {
     display: flex;
     align-items: center;
     position: relative;
-    width: 50px;
-    height: 17px;
+    width: 35px;
+    height: 10px;
     background-color: rgb(82, 82, 82);
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .2s;
-  }
-  
-  .themeSwitch::after {
+}
+
+.themeSwitch::after {
     content: "";
     position: absolute;
-    height: 22px;
-    width: 22px;
+    height: 16px;
+    width: 16px;
     left: 0px;
     background-color: rgb(41, 41, 41);
     border-radius: 50%;
     transition-duration: .2s;
     border: 2px solid rgb(82, 82, 82);
-  }
-  
-  #themeInput:checked+.themeSwitch::after {
+}
+
+#themeInput:checked+.themeSwitch::after {
     transform: translateX(100%);
     transition-duration: .2s;
-    border: 2px solid #FCEB53;
-  }
-  /* Switch background change */
-  #themeInput:checked+.themeSwitch {
-    background-color: #FCEB53;
+    border: 2px solid #00bcd4;
+}
+
+/* Switch background change */
+#themeInput:checked+.themeSwitch {
+    background-color: #00bcd4;
     transition-duration: .2s;
-  }
-  
+}
 
 
 
-/* From Uiverse.io by cbolson */ 
+
+/* From Uiverse.io by cbolson */
 .language-switch {
     display: flex;
     align-items: center;
@@ -138,45 +143,123 @@
     position: relative;
     font-size: 1rem;
     font-weight: bold;
-    gap: 5px; /* Espaciado entre las opciones */
-    color: var(--secondary-color); /* Color del texto */
+    gap: 5px;
+    /* Espaciado entre las opciones */
+    color: var(--secondary-color);
+    /* Color del texto */
 }
 
 .language-switch .language-option {
-    all: unset; /* Elimina todos los estilos predeterminados */
+    all: unset;
+    /* Elimina todos los estilos predeterminados */
     cursor: pointer;
     position: relative;
-    color: #999999; /* Color por defecto */
-    font-size: inherit; /* Hereda tamaño de fuente del contenedor */
-    font-weight: inherit; /* Hereda peso de la fuente del contenedor */
+    color: #999999;
+    /* Color por defecto */
+    font-size: inherit;
+    /* Hereda tamaño de fuente del contenedor */
+    font-weight: inherit;
+    /* Hereda peso de la fuente del contenedor */
     transition: color 0.3s ease;
 }
 
 .language-switch .language-option.active {
-    color: var(--secondary-color); /* Color cuando está activo */
+    color: var(--secondary-color);
+    /* Color cuando está activo */
 }
+
 .language-switch .language-option:hover {
-    color: var(--secondary-color); /* Cambia el color al pasar el cursor */
+    color: var(--secondary-color);
+    /* Cambia el color al pasar el cursor */
 }
 
 /* Línea indicadora */
 .language-switch .underline {
     position: absolute;
-    bottom: -1px; /* Ajusta la distancia de la línea respecto al texto */
+    bottom: -1px;
+    /* Ajusta la distancia de la línea respecto al texto */
     height: 3px;
-    width: 24px; /* Ajusta el ancho para que coincida con el texto */
-    background-color: var(--secondary-color); /* Color de la línea */
+    width: 24px;
+    /* Ajusta el ancho para que coincida con el texto */
+    background-color: var(--secondary-color);
+    /* Color de la línea */
     transition: transform 0.3s ease;
     transform: translateX(0);
 }
 
 /* Subrayado dinámico según el idioma activo */
-.language-switch .language-option.en.active ~ .underline {
-    transform: translateX(0); /* Posición inicial (EN) */
+.language-switch .language-option.en.active~.underline {
+    transform: translateX(0);
+    /* Posición inicial (EN) */
 }
 
-.language-switch .language-option.es.active ~ .underline {
-    transform: translateX(35px); /* Ajusta según el tamaño del texto */
+.language-switch .language-option.es.active~.underline {
+    transform: translateX(35px);
+    /* Ajusta según el tamaño del texto */
+}
+
+.menu-button {
+    display: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 
+.dark .menu-button {
+    color: var(--primary-color);
+}
+
+/* Estilos exclusivos para móviles */
+@media (max-width: 768px) {
+
+    .appbar {
+        position: relative;
+    }
+
+    .menu-button {
+        display: block;
+        left: 50%;
+        top: 50%;
+        font-size: 40px;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1100;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1099;
+    }
+
+    .nav-container.open .nav-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-container.open .nav-links a {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .switch-container {
+        gap: 0.5rem;
+    }
+}

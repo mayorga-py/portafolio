@@ -1,8 +1,10 @@
 import React from "react";
 import "./Tools.css";
+import { useTranslation } from "react-i18next";
 import { IconCloud } from "../components/tools_";
 
 const Tools: React.FC = () => {
+    const { t } = useTranslation(); 
     const slugs = [
         "typescript",
         "unity",
@@ -23,6 +25,9 @@ const Tools: React.FC = () => {
         "php",
         "c#",
         "sqlserver",
+        "autodesk",
+        "adobe",
+
     ];
 
     const images = slugs.map(
@@ -31,6 +36,9 @@ const Tools: React.FC = () => {
 
     return (
         <div className="tools_prin">
+            <div>
+                <p>{t("tools.some")}</p>
+            </div>
             <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background">
                 <IconCloud images={images} />
             </div>

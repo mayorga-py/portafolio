@@ -8,6 +8,7 @@ import "./AppBar.css";
 const AppBar: React.FC = () => {
     const [showAppBar, setShowAppBar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [menuOpen, setMenuOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
     const location = useLocation();
     const { t, i18n } = useTranslation();
@@ -26,6 +27,8 @@ const AppBar: React.FC = () => {
         if (location.pathname === "/") {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
+
+        setMenuOpen(false);
     };
 
     useEffect(() => {
@@ -50,16 +53,16 @@ const AppBar: React.FC = () => {
                     <Logo />
                 </Link>
             </div>
-            <nav>
+            <nav className={`nav-container ${menuOpen ? "open" : ""}`}>
                 <ul className="nav-links">
                 <li>
-                    <Link to="/#about">{t("appbar.ABOUT")}</Link>
+                    <Link to="/#about" onClick={() => setMenuOpen(false)}>{t("appbar.ABOUT")}</Link>
                     </li>
                     <li>
-                        <Link to="/#projects">{t("appbar.PROJECTS")}</Link>
+                        <Link to="/#projects" onClick={() => setMenuOpen(false)}>{t("appbar.PROJECTS")}</Link>
                     </li>
                     <li>
-                        <Link to="/tools">{t("appbar.TECHNOLOGIES")}</Link>
+                        <Link to="/tools" onClick={() => setMenuOpen(false)}>{t("appbar.TECHNOLOGIES")}</Link>
                     </li>
                 </ul>
             </nav>
@@ -77,8 +80,12 @@ const AppBar: React.FC = () => {
                 <input id="themeInput" type="checkbox" checked={theme === "dark"} onChange={toggleTheme} />
                 <label className="themeSwitch" htmlFor="themeInput" />
             </div>
+
+            <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? "X" : "☰"}
+            </button>
         </header>
     );
 };
-
+    
 export default AppBar;

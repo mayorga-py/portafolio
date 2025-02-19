@@ -1,14 +1,20 @@
 import React from "react";
-import Cal1 from "../assets/projects-views/cal1.webp";
+import Cal01 from "../assets/projects-views/cal01.png";
 import Cal2 from "../assets/projects-views/cal2.webp";
-import Cal3 from "../assets/projects-views/cal3.webp";
-import Cal4 from "../assets/projects-views/cal4.webp";
+import Cal3 from "../assets/projects-views/cal3.png";
+import Cal4 from "../assets/projects-views/cal4.png";
+import Cal5 from "../assets/projects-views/cal5.png";
+import Cal6 from "../assets/projects-views/cal6.png";
+import Cal7 from "../assets/projects-views/cal7.png";
 import Logo from "../components/Logo";
 import"./views.css"
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 
 const calfing: React.FC = () => {
+    const { t } = useTranslation();
 
     return (
         <div className="layouts">
@@ -17,31 +23,35 @@ const calfing: React.FC = () => {
                 <div className="work-tools">
                     <h3>WORK</h3>
                     <li>UI/UX</li>
-                    <li>NEURAL NETWORK</li>
+                    <li>BACKEND</li>
                     <li>PROJECT MANAGER</li>
                     <h3>DATE</h3>
-                    <li>JUN-NOM 2024</li>
+                    <li>APR-MAY 2024</li>
                     <h3>TOOLS</h3>
-                    <li>FLUTTER</li>
-                    <li>PYTHON</li>
-                    <li>FIRE BASE</li>
+                    <li>JS</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
                 </div>
 
             </div>
             <div className="dos">
-                <img className="covert" src={Cal1} alt="cal1" />
+                <img className="covert" src={Cal01} alt="cal01" />
                 <div className="title">CAL-FING</div>
                 <div className="tex">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus ipsum, egestas porttitor neque. Nulla dictum, velit et pellentesque pulvinar, justo arcu tempor lorem, vitae euismod ex justo non metus. Nunc feugiat vestibulum arcu ac finibus. Donec vitae maximus felis. </p>
+                    <p>{t("vical.p1")} </p>
                 </div>
                 <div className="im">
                     <img src={Cal2} alt="cal2" />
+                    <div className="tex">{t("vical.p2")}</div>
                     <img src={Cal3} alt="cal3" />
                     <img src={Cal4} alt="cal4" />
+                    <img src={Cal5} alt="cal5" />
+                    <div className="tex">{t("vical.p3")}</div>
+                    <img src={Cal6} alt="cal6" />
+                    <img src={Cal7} alt="cal7" />
+                    <div className="tex">{t("vical.p4")}</div>
                 </div>
-                <div className="tex">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus ipsum, egestas porttitor neque. Nulla dictum, velit et pellentesque pulvinar, justo arcu tempor lorem, vitae euismod ex justo non metus. Nunc feugiat vestibulum arcu ac finibus. Donec vitae maximus felis. </p>
-                </div>
+                
         
             </div>
             <div className="tres"> 
