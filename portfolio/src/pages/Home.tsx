@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import m1 from "../assets/m1.jpg";
+import m1 from "../assets/m1.webp";
 import mc from "../assets/mc.webp";
 import cvPdf from "../assets/CV_Luis_Eduardo_Mayorga_Becerra_.pdf";
 import{ useTranslation } from "react-i18next";

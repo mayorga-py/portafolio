@@ -1,11 +1,11 @@
 import React from "react";
-import Cal01 from "../assets/projects-views/cal01.png";
+import Cal01 from "../assets/projects-views/cal01.webp";
 import Cal2 from "../assets/projects-views/cal2.webp";
-import Cal3 from "../assets/projects-views/cal3.png";
-import Cal4 from "../assets/projects-views/cal4.png";
-import Cal5 from "../assets/projects-views/cal5.png";
-import Cal6 from "../assets/projects-views/cal6.png";
-import Cal7 from "../assets/projects-views/cal7.png";
+import Cal3 from "../assets/projects-views/cal3.webp";
+import Cal4 from "../assets/projects-views/cal4.webp";
+import Cal5 from "../assets/projects-views/cal5.webp";
+import Cal6 from "../assets/projects-views/cal6.webp";
+import Cal7 from "../assets/projects-views/cal7.webp";
 import Logo from "../components/Logo";
 import"./views.css"
 import { Link } from "react-router-dom";

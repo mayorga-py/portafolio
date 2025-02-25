@@ -1,10 +1,10 @@
 import React from "react";
 import O_1 from "../assets/projects-views/o1.webp";
 import O_2 from "../assets/projects-views/o2.webp";
-import O_3 from "../assets/projects-views/o3.jpg";
-import O_41 from "../assets/projects-views/o4_1.jpg";
-import O_42 from "../assets/projects-views/o4_2.jpg";
-import O_43 from "../assets/projects-views/o4_3.jpg";
+import O_3 from "../assets/projects-views/o3.webp";
+import O_41 from "../assets/projects-views/o4_1.webp";
+import O_42 from "../assets/projects-views/o4_2.webp";
+import O_43 from "../assets/projects-views/o4_3.webp";
 
 import O_5 from "../assets/projects-views/o5.webp";
 import O_6 from "../assets/projects-views/o6.webp";

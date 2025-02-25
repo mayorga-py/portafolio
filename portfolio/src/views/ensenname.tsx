@@ -1,5 +1,5 @@
 import React from "react";
-import En1 from "../assets/projects-views/en1.jpg";
+import En1 from "../assets/projects-views/en1.webp";
 import En2 from "../assets/projects-views/en2.webp";
 import En3 from "../assets/projects-views/en3.webp";
 import En4 from "../assets/projects-views/en4.webp";
