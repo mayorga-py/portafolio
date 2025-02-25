@@ -23,7 +23,7 @@ const Ensenname: React.FC = () => {
                     <li>MAKER</li>
                     <li>PROJECT MANAGER</li>
                     <h3>DATE</h3>
-                    <li>NON 2022</li>
+                    <li>NOV 2022</li>
                     <h3>TOOLS</h3>
                     <li>PYTHON</li>
                     <li>OpenCv</li>

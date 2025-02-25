@@ -22,7 +22,7 @@ const prevout: React.FC = () => {
                     <li>NEURAL NETWORK</li>
                     <li>PROJECT MANAGER</li>
                     <h3>DATE</h3>
-                    <li>JUN-NOM 2024</li>
+                    <li>JUN-NOV 2024</li>
                     <h3>TOOLS</h3>
                     <li>FLUTTER</li>
                     <li>PYTHON</li>

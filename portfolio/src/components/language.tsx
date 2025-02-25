@@ -65,7 +65,7 @@ const resources = {
       appbar: {
         ABOUT: "ACERCA DE MI",
         PROJECTS: "PROYECTOS",
-        TECHNOLOGIES: "TECNOLOÍAS",
+        TECHNOLOGIES: "TECNOLOGÍAS",
       },
       ABOUTview: {
         INTRO: "¡Hola! :D Soy Luis, un desarrollador Full Stack dedicado con un fuerte enfoque en el diseño UX/UI y un enfoque integral para resolver problemas. Tengo experiencia liderando equipos y destaco en la creación de soluciones centradas en el usuario.",

@@ -12,6 +12,7 @@ import Prevout from "./views/prevout";
 import Calfi from "./views/calfing";
 import Acd_works_1 from "./views/acd_works_1";
 import Ensenname from "./views/ensenname";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 
 import "./App.css";
 
@@ -59,6 +60,7 @@ const App: React.FC = () => {
     <div className="app-container">
       <Cursor />
       <Router>
+      <AnalyticsTracker />
         <ScrollToHash />
           <Routes>
             <Route element={<MainLayaout />}>
