@@ -36,7 +36,7 @@ const About: React.FC = () => {
                     <a href="https://www.linkedin.com/in/luis-mayorga-082291252" target="_blank" rel="noopener noreferrer" style={{color: "#0a66c2"}} data-tooltip="LinkedIn">
                         <i className="fab fa-linkedin"></i> {/* LinkedIn */}
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{color: "#fceb53"}} data-tooltip="GitHub">
+                    <a href="https://github.com/mayorga-py" target="_blank" rel="noopener noreferrer" style={{color: "#fceb53"}} data-tooltip="GitHub">
                         <i className="fab fa-github"></i> {/* GitHub */}
                     </a>
                     <a href="https://www.instagram.com/mayorga.py/" target="_blank" rel="noopener noreferrer" style={{color: "#ff0062"}} data-tooltip="Instagram">
