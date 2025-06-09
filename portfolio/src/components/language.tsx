@@ -16,7 +16,7 @@ const resources = {
       },
       ABOUTview: {
         INTRO: "Hiii :D, I'm Luis, a dedicated Full Stack Developer with a strong focus on UX/UI design and a comprehensive approach to problem-solving, I have experience leading teams and excel in creating user-centered solutions.",
-        STUD: "Currently, I am growing professionally while studying Computer Systems Engineering (8.º out of 10.º), which allows me to stay up to date with the latest trends and technologies in software development.",
+        STUD: "Currently, I am growing professionally while studying Computer Systems Engineering (9.º out of 10.º), which allows me to stay up to date with the latest trends and technologies in software development.",
         VALUES: "I pride myself on being hardworking and empathetic, with a positive attitude towards service and a commitment to continuous improvement. My core values include honesty and autonomy.",
         PASSION: "I'm passionate about growing in the fields of software development and business development and I'm always eager to take on new challenges.",
         TALK_TO_ME: "Talk to me here",
@@ -35,7 +35,7 @@ const resources = {
         some: "This is a some tehcnologies with I use"
       },
       viewprev: {
-        p1: "Prev-out is a project developed for the Universidad Politécnica de Querétaro  (UPQ), iIts main goal is to help the institution identify students at higher risk of dropping out by analyzing the results of the psychometric test conducted during the admission process this enables the university to optimize resource allocation and implement targeted support strategies to enhance student retention.",
+        p1: "Prev-out is a project developed for the Universidad Politécnica de Querétaro  (UPQ), it's main goal is to help the institution identify students at higher risk of dropping out by analyzing the results of the psychometric test conducted during the admission process this enables the university to optimize resource allocation and implement targeted support strategies to enhance student retention.",
         p2: "The system operates using an LSTM recurrent neural network trained with data from three student generations once an Excel file with the data to predict is prepared, it is uploaded to a Flask server, which returns the Excel file with prediction results and a JSON file, the JSON file enables additional features such as generating graphs, listing within the app and searching by student ID.",
         p3: "Within the app two types of users can be created: “user” and “admin”. The admin can create or delete users while the user has access only to the basic features of the application."
       },

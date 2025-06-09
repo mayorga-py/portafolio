@@ -51,7 +51,7 @@ const SecondLayaout: React.FC =()=>{
     </>
   );
 };
-
+//solo es un comentario de prueba para ver que mis lentes no esten sucios xd
 
 const App: React.FC = () => {
 
