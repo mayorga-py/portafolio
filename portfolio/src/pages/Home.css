@@ -1,6 +1,7 @@
 .home {
     line-height: 1;
     padding: 0px;
+    position: relative;
 }
 
 .home .titulo {
@@ -151,8 +152,8 @@
     position: absolute;
     width: 175px; /* Igual que el ancho de .imprin2 img */
     height: 175px;
-    left: 1070px; 
-    top: 0%; 
+    right: 280px; 
+    top: -4%; 
     margin: 0 auto;
     z-index: 1;
     transition: filter 0.1s ease;
@@ -235,8 +236,8 @@
     .imprin img {
         position: absolute;
         width: 380px;
-        left: 1150px;
-        top: -22%;
+        right: 0;
+        top: -34%;
     }
 
     .imprin2 img {
