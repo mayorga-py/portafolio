@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Tools from "./pages/Tools";
 import Cursor from "./components/Cursor";
+import Luos from "./views/luos";
 import Siieeq from "./views/siieeq";
 import Prevout from "./views/prevout";
 import Calfi from "./views/calfing";
@@ -84,6 +85,7 @@ const App: React.FC = () => {
           </Route>
  
           <Route element={<SecondLayaout />}>
+            <Route path="/views/luos" element={<Luos />}/>
             <Route path="/views/siieeq" element={<Siieeq/>}/>
             <Route path="/views/prevout" element={<Prevout />}/>
             <Route path="/views/calfing" element={<Calfi />}/>

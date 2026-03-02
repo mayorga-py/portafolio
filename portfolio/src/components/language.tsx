@@ -11,12 +11,12 @@ const resources = {
         TECHNOLOGIES: "TECHNOLOGIES",
       },
       Home: {
-        title: "HI, I´M Luis Eduardo Mayorga Becerra",
+        title: "HI, I´M Luis Mayorga",
         subt: "FULL STACK DEVELOPER",
       },
       ABOUTview: {
         INTRO: "Hiii :D, I'm Luis, a dedicated Full Stack Developer with a strong focus on UX/UI design and a comprehensive approach to problem-solving, I have experience leading teams and excel in creating user-centered solutions.",
-        STUD: "Currently, I am growing professionally while studying Computer Systems Engineering (9.º out of 10.º), which allows me to stay up to date with the latest trends and technologies in software development.",
+        STUD: "I am a Computer Systems Engineer, with a solid background in software development and a strong commitment to staying up to date with the latest trends and technologies.",
         VALUES: "I pride myself on being hardworking and empathetic, with a positive attitude towards service and a commitment to continuous improvement. My core values include honesty and autonomy.",
         PASSION: "I'm passionate about growing in the fields of software development and business development and I'm always eager to take on new challenges.",
         TALK_TO_ME: "Talk to me here",
@@ -54,12 +54,21 @@ const resources = {
         p1: "Here you can explore a selection of activities I completed during my academic training in Tecnologías de la Información área Entornos Virtuales y Negocios Digitales (Information Technologies focus on Virtual Environments and Digital Business), these activities include the development of augmented reality applications, virtual reality experiences, and 3D modeling projects.",
         p2: "To carry out these projects, I used tools such as Autodesk Maya, 3ds Max, and Unity, combined with design software like Photoshop and Illustrator. Each project reflects the technical knowledge I acquired.",
       },
+      viewluos: {
+        p1: "LUOS is an IT consulting firm that provides technological innovation services to companies of all kinds. Its offerings include custom software development, digital identity, automation, AI analysis, data management, and other technology-driven solutions. The main objective of the project was to design and develop a complete website that conveys innovation, trust, and modernity, aligning with the firm’s essence and strengthening its digital presence.",
+        p2: "The main page was conceived as an immersive and visually engaging experience, integrating clear navigation, a high-impact hero section, a strategic overview of services, informative content, and a timeline representing the project workflow. The journey concludes with a contact form designed to encourage conversion and facilitate connections with potential clients.",
+        p3: "This section dives deeper into the three core areas in which LUOS operates, providing more detailed information for users who want to better understand the scope of each solution. Different color palettes were used to convey distinct moods depending on the type of service being explored, reinforcing concepts such as technology, efficiency, and trust, while maintaining a clear structure that enhances readability and improves the overall navigation experience.",
+        p4: "This view features a form that, unlike the footer version, includes additional options to personalize a future meeting. Users can select time zones (GMT), as well as the preferred date and time for the virtual call. Once this information is selected, the user is redirected to a second form where contact details are requested, along with the option to add up to ten guests to the meeting.",
+        p5: "The “Our Story” section aims to create a meaningful connection with users through a more refined and organized design. It highlights the driving force behind the organization and presents the essential information in a way that ensures a comfortable and engaging experience.",
+        p6: "The website features a design that, while visually striking on large screens, successfully preserves its essence on mobile devices and smaller displays, ensuring that the user experience remains consistent regardless of format.",
+        p7: "The official LUOS website will be available in the coming days. (The images currently displayed correspond to test versions. In the final version, sizes, text, layout, and visual elements may vary.)",
+      },
     },
   },
   es: {
     translation: {
       Home: {
-        title: "HOLA, Soy Luis Eduardo Mayorga Becerra",
+        title: "HOLA, Soy Luis Mayorga ",
         subt: "DESARROLLADOR FULL STACK",
       },
       appbar: {
@@ -69,7 +78,7 @@ const resources = {
       },
       ABOUTview: {
         INTRO: "¡Hola! :D Soy Luis, un desarrollador Full Stack dedicado con un fuerte enfoque en el diseño UX/UI y un enfoque integral para resolver problemas. Tengo experiencia liderando equipos y destaco en la creación de soluciones centradas en el usuario.",
-        STUD: "Actualmente, estoy desarrollándome como profesional estudiando Ingeniería en Sistemas Computacionales (8.º cuatrimestre de 10.º), lo que me permite mantenerme al día con las últimas tendencias y tecnologías en desarrollo de software.",
+        STUD: "Soy Ingeniero en Sistemas Computacionales con formación sólida en desarrollo de software, tengo un interés constante por mantenerme actualizado en las últimas tendencias y tecnologías.",
         VALUES: "Me enorgullezco de ser trabajador y empático, con una actitud positiva hacia el servicio y un compromiso con la mejora continua. Mis valores principales incluyen honestidad, integridad, y autonomía.",
         PASSION: "Me apasiona crecer en los campos del desarrollo de software y el desarrollo empresarial, y siempre estoy dispuesto a asumir nuevos desafíos.",
         TALK_TO_ME: "Podemos hablar aquí",
@@ -106,6 +115,15 @@ const resources = {
       viwork1: {
         p1: "Aquí podrás explorar una selección de actividades que realicé durante mi formación académica en la carrera de Tecnologías de la Información área Entornos Virtuales y Negocios Digitales, estas actividades incluyen el desarrollo de aplicaciones de realidad aumentada, experiencias de realidad virtual y proyectos de modelado en 3D.",
         p2: "Para llevar a cabo estos proyectos, utilicé herramientas como Autodesk Maya, 3ds Max, y Unity, combinadas con software de diseño como Photoshop e Illustrator. Cada trabajo refleja los conocimientos técnicos adquiridos.",
+      },
+      viewluos: {
+        p1: "LUOS es una consultora de TI enfocada en ofrecer soluciones de innovación tecnológica a empresas de cualquier industria. Ofrece servicios como software personalizado, identidad digital, automatización, análisis de IA, manejo de data, entre otras soluciones tecnológicas, El objetivo principal del proyecto fue diseñar y desarrollar un sitio web completo que transmitiera innovación, confianza y modernidad, alineándose con la esencia de la consultora, fortaleciendo su presencia.",
+        p2: "La página principal fue planeada como una experiencia inmersiva y visualmente atractiva, integrando una navegación clara, una portada de alto impacto, un resumen estratégico de servicios, contenido informativo y una línea del tiempo que representa el flujo de los proyectos. El recorrido concluye con un formulario de contacto diseñado para facilitar la conversión y el acercamiento con potenciales clientes.",
+        p3: "Esta sección profundiza en las tres áreas principales en las que LUOS opera, s brindando una mayor cantidad de información para aquellos usuarios que desean comprender con mayor detalle el alcance de cada solución. Se trabajó con diferentes paletas de colores para transmitir diferentes vibras según el tipo de servicio consultado, buscando reforzar conceptos como tecnología, eficiencia y confianza, se mantiene una estructura clara que facilita la lectura y mejora la experiencia de navegación.",
+        p4: "Esta vista es un formulario que a diferencia de footer contiene mas opciones para personalizar una futura reunión, pudiendo escoger entre GMTS, día y hora para la llamada virtual, una vez seleccionada esta información se lleva el usuario a un 2do formulario en donde se le pedirá su información de contactos, así como dar la oportunidad de agregar hasta 10 invitados a la reunión.",
+        p5: "La sección “Nuestra historia” busca generar conexión con el usuario a través de un diseño más sobrio y organizado, busca dar a conocer lo que mueve a la organización, muestra lo esencial para que el usuario se sienta cómodo.",
+        p6: "La pagina cuenta con un diseño que, pese a ser llamativo en pantallas grandes logra mantener su esencia en dispositivos móviles o pantallas mas pequeñas, por lo que la experiencia de usuario no se ve perjudicada pese al formato.",
+        p7: "El sitio oficial de LUOS estará disponible en los próximos días. (Las imágenes mostradas actualmente corresponden a versiones de prueba. En la versión final pueden variar tamaños, textos, ubicaciones y elementos visuales.)",
       },
     },
   },

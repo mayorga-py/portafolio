@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./Projects.css"
+import luos from "../assets/projects/luos.png";
 import siieeq from "../assets/projects/siieeq.webp";
 import calFiImage from "../assets/projects/calfi.webp";
 import prevOutImage from "../assets/projects/prevout.webp";
@@ -9,6 +10,7 @@ import { useTranslation } from "react-i18next";
 
 
 const projects = [
+    { name: "LUOS", image: luos, link: "/views/luos" },
     { name: "SIIEEQ", image: siieeq, link: "/views/siieeq" },
     { name: "PREV-OUT", image: prevOutImage, link: "/views/prevout" },
     { name: "CAL-FING", image: calFiImage, link: "/views/calfing" },
