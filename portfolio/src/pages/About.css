@@ -94,6 +94,42 @@
     }
 }
 
+@media (max-width: 768px) {
+    .section-about {
+        min-height: auto;
+        padding: 60px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .about-section {
+        padding: 0 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .inabout {
+        font-size: 1.05rem;
+        text-align: center;
+        padding: 0 16px;
+        word-break: break-word;
+        max-width: 600px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .inabout p {
+        margin: 0 0 16px;
+    }
+
+    .inabout ul {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
 
 .loader {
     position: fixed;

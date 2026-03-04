@@ -26,6 +26,12 @@ body::-webkit-scrollbar {
   display: none; /* Para navegadores basados en WebKit */
 }
 
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /*body::-webkit-scrollbar {
   width: 0;
 }

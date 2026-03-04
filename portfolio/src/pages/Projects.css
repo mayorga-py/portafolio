@@ -46,20 +46,49 @@
 
   @media (max-width: 768px) {
     .project-section {
+        position: static;
+        bottom: auto;
+        width: 100%;
+        max-width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Centra verticalmente */
-
+        justify-content: flex-start;
+        padding: 24px 12px 48px;
+        gap: 24px;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .project-titles {
-        width: 90%;
+        width: 100%;
+        max-width: 25rem;
         height: auto;
-        margin: 0 auto; /* Centra horizontalmente */
-        padding: 1px;
+        margin: 0 auto;
+        padding: 0;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+    }
 
+    .project-titles p {
+        line-height: 1.5;
+        font-size: 26px;
+    }
+
+    .p-line1::after,
+    .projects-list p::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .projects-list {
+        line-height: 1.5;
+        max-height: none;
+        padding-left: 0;
+    }
+
+    .projects-list p {
+        line-height: 1.5;
     }
 }
 
