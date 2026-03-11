@@ -4,6 +4,7 @@ import luos_2 from "../assets/projects-views/luos_2.webp";
 import luos_3 from "../assets/projects-views/luos_3.webp";
 import luos_4 from "../assets/projects-views/luos_4.webp";
 import luos_5 from "../assets/projects-views/luos_5.webp";
+import luos_6 from "../assets/projects-views/luos_6.webp";
 import Logo from "../components/Logo";
 import"./views.css"
 import { Link } from "react-router-dom";
@@ -22,7 +23,7 @@ const prevout: React.FC = () => {
                     <li>PROJECT MANAGER</li>
                     <li>WEB DEVELOPER</li>
                     <h3>DATE</h3>
-                    <li>JAN 2026</li>
+                    <li>FEB 2026</li>
                     <h3>TOOLS</h3>
                     <li>ASTRO</li>
                     <li>TypeScript</li>
@@ -60,11 +61,20 @@ const prevout: React.FC = () => {
                 <div className="tex">
                     <p>{t("viewluos.p5")}</p>
                 </div>
+                <div className="im">
+                    <img className="covert" src={luos_6} alt="luos_6" />
+                </div>
                 <div className="tex">
                     <p>{t("viewluos.p6")}</p>
                 </div>
                 <div className="tex">
                     <p>{t("viewluos.p7")}</p>
+                    <a href="https://luos.com.mx" target="_blank" rel="noopener noreferrer">
+                        https://luos.com.mx
+                    </a>
+                </div>
+                <div className="tex">
+                    <p>{t("viewluos.p8")}</p>
                 </div>
 
             </div>
